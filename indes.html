@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-BR  ">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <title>Nav Highlight</title>
-    </head>
-    <body>
-        <h1 class="title">Oi gatona!</h1>
-        <input class="addList" type="text">
-        <button class="addItem">Adicionar Item</button>
-        <ul class="foodList">
-            <li>Arroz</li>
-            <li>Feijão</li>
-            <li>Macarrão</li>
-            <li>Carne</li>
-        </ul>
-    <script src="./app.js"></script>
-    </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Tempo com Deus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1 class="dashboard-title">Meu Tempo com Deus</h1>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="verse-section">
+            <h2>Versículo do Dia</h2>
+            <p id="bible-verse">Carregando...</p>
+            <small id="verse-reference"></small>    
+        </section>
+
+        <section class="habits-section">
+            <h2 class="section-title">Hábitos Cristãos</h2>
+            <ul class="habits-list">
+                <li><input type="checkbox" class="habit-checkbox">📖 Ler a Bíblia</li>
+                <li><input type="checkbox" class="habit-checkbox">🙏 Tempo de Oração</li>
+                <li><input type="checkbox" class="habit-checkbox">👨‍👩‍👧‍👦 Tempo com a Família</li>
+                <li><input type="checkbox" class="habit-checkbox">❤️ Servir ao Próximo</li>
+                <li><input type="checkbox" class="habit-checkbox">🎶 Louvar e Adorar</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
 </html>
